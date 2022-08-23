@@ -33,20 +33,20 @@
 }
 
 .nav-items li {
-  margin-left: 35px;
   display: inline-block;
+  margin-left: 35px;
 }
 
 .nav-items li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 500;
 }
 
 .navbar .talk-btn {
   margin-right: 60px;
-  padding: 8px 30px;
+  padding: 10px 30px;
   background-color: transparent;
   font-size: 18px;
   font-weight: 600;
@@ -88,15 +88,15 @@ img[alt="image-1"] {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .introduction form {
+  margin-top: 30px;
   position: relative;
 }
 
 .introduction input {
-  margin-top: 30px;
   padding: 15px 40px;
   width: 350px;
   font-size: 15px;
@@ -116,7 +116,7 @@ img[alt="image-1"] {
   transition: background-color 150ms ease;
   position: absolute;
   right: 48px;
-  top: 36px;
+  top: 6px;
 }
 
 .introduction .talk-btn:hover {
@@ -128,7 +128,7 @@ img[alt="mail-icon"] {
   height: 18px;
   position: absolute;
   left: 10px;
-  top: 45px;
+  top: 16px;
 }
 
 .achievements {
@@ -151,7 +151,7 @@ img[alt="mail-icon"] {
 }
 
 .data h3 {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -200,7 +200,7 @@ img[alt="image-2"] {
   margin-left: 100px;
 }
 
-.second {
+.two {
   margin-right: 80px;
   position: relative;
   bottom: 80px;
@@ -232,7 +232,7 @@ img[alt="image-5"] {
   margin-top: 25px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .service .talk-btn {
@@ -263,17 +263,18 @@ img[alt="image-5"] {
 }
 
 .head h3 {
-  font-size: 40px;
-  width: 30%;
   margin-left: 80px;
+  font-size: 40px;
+  line-height: 1.4;
+  width: 30%;
 }
 
 .head p {
+  margin-right: 120px;
   font-size: 15px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.6;
   width: 35%;
-  margin-right: 120px;
 }
 
 .team-members {
@@ -293,7 +294,7 @@ img[alt="image-5"] {
 
 .team-member h4 {
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .team-member p {
@@ -336,6 +337,7 @@ img[alt="image-5"] {
 
 .logo-2 {
   height: 45px;
+  cursor: pointer;
 }
 
 .social-media img {
@@ -343,7 +345,20 @@ img[alt="image-5"] {
   padding: 10px;
   background-color: #ffffff20;
   border-radius: 50%;
-  margin: 0 4px;
+  margin-left: 8px;
+}
+
+.social-media img:hover {
+  animation: zoom 200ms ease forwards;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
 }
 
 .divider {
