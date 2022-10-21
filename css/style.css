@@ -8,51 +8,76 @@
   color: #1b1b1b;
 }
 
-.header {
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding: 0px 110px;
+}
+
+header {
   background-color: #636c79;
-  padding-top: 50px;
-  padding-bottom: 70px;
 }
 
 .navbar {
+  padding: 50px 60px 0px 60px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo-1 {
-  margin-left: 60px;
-  height: 50px;
+.logo-top {
+  width: 120px;
   cursor: pointer;
 }
 
 .nav-items {
-  margin-left: 150px;
-  list-style-type: none;
-}
-
-.nav-items li {
-  display: inline-block;
-  margin-left: 35px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
 }
 
 .nav-items li a {
-  text-decoration: none;
   color: #ffffff;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .navbar .talk-btn {
-  margin-right: 60px;
+  margin-left: 60px;
   padding: 10px 30px;
   background-color: transparent;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
   border: 1px solid #ffffff;
-  transition: background-color 150ms ease;
+  transition: background-color 200ms ease;
 }
 
 .navbar .talk-btn:hover {
@@ -60,190 +85,153 @@
   background-color: #535762;
 }
 
-.introduction {
-  margin-top: 60px;
+.fa-bars {
+  font-size: 22px;
+  color: white;
+  display: none;
+}
+
+.hero {
+  padding: 70px 0px;
+}
+
+.hero .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-img[alt="image-1"] {
-  height: 440px;
-  clip-path: inset(0 22% 0 22%);
-}
-
-.introduction .content {
+.hero .image {
   width: 35%;
-  margin-right: 100px;
 }
 
-.introduction h1 {
-  font-size: 45px;
+.hero .content {
+  width: 45%;
+}
+
+.hero .content h1 {
   color: #ffffff;
 }
 
-.introduction p {
+.hero .content p {
   margin-top: 30px;
-  font-size: 16px;
-  font-weight: 500;
   color: #ffffff;
-  line-height: 1.7;
 }
 
-.introduction form {
+.hero .content form {
   margin-top: 30px;
-  position: relative;
 }
 
-.introduction input {
+.hero input {
   padding: 15px 40px;
-  width: 350px;
+  width: 360px;
   font-size: 15px;
-  font-weight: 600;
-  color: #758283;
+  font-weight: 500;
   background-color: #ffffff;
   border: none;
 }
 
-.introduction .talk-btn {
-  padding: 9px 20px;
+.hero .talk-btn {
+  padding: 10px 20px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
   background-color: #8bb7a2;
   border: none;
-  transition: background-color 150ms ease;
-  position: absolute;
-  right: 48px;
-  top: 6px;
+  transition: background-color 200ms ease;
+  position: relative;
+  left: 324px;
+  bottom: 44px;
 }
 
-.introduction .talk-btn:hover {
+.hero .talk-btn:hover {
   cursor: pointer;
   background-color: #749a87;
 }
 
 img[alt="mail-icon"] {
-  height: 18px;
-  position: absolute;
-  left: 10px;
-  top: 16px;
+  width: 18px;
+  position: relative;
+  right: 105px;
+  bottom: 40px;
 }
 
-.achievements {
-  margin-top: 80px;
+.about-us {
+  padding-top: 70px;
   text-align: center;
 }
 
-.achievements h2 {
-  font-size: 40px;
-  width: 50%;
+.about-us h2 {
+  width: 60%;
   margin: auto;
 }
 
 .company-stats {
   margin-top: 60px;
   margin-bottom: 70px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.data h3 {
-  font-size: 30px;
-  margin-bottom: 10px;
+.stat h3 {
+  font-size: 32px;
 }
 
-.data span {
+.stat h5 {
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 600;
 }
 
-img[alt="image-2"] {
-  height: 600px;
-  clip-path: inset(0% 0% 25% 0%);
+.about-us .image {
+  width: 90%;
+  margin: auto;
 }
 
 .services {
-  margin-top: -40px;
+  padding-top: 80px;
 }
 
 .services h2 {
-  font-size: 40px;
   text-align: center;
-  width: 40%;
+  width: 50%;
   margin: auto;
+}
+
+.all-services {
+  margin-top: 80px;
 }
 
 .service {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 80px;
 }
 
-.top {
-  margin-top: 80px;
+.service .content {
+  width: 45%;
 }
 
-.middle {
-  margin-top: 70px;
-}
-
-.bottom {
-  margin-top: -80px;
-}
-
-.content {
-  width: 40%;
-  margin-left: 100px;
-}
-
-.two {
-  margin-right: 80px;
-  position: relative;
-  bottom: 80px;
-}
-
-img[alt="image-3"] {
-  height: 470px;
-  clip-path: inset(0% 0% 0% 45%);
-  margin-right: 100px;
-}
-
-img[alt="image-4"] {
-  height: 620px;
-  clip-path: inset(0% 0% 25% 0%);
-  margin-left: 100px;
-}
-
-img[alt="image-5"] {
-  height: 460px;
-  clip-path: inset(0% 20% 0% 20%);
-}
-
-.service h3 {
-  font-size: 40px;
-  line-height: 1.4;
+.service .content h2 {
+  width: 100%;
+  font-size: 36px;
+  text-align: left;
 }
 
 .service p {
   margin-top: 25px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.7;
 }
 
 .service .talk-btn {
   margin-top: 30px;
   padding: 12px 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
   background-color: #8bb7a2;
   border: none;
-  transition: background-color 150ms ease;
+  transition: background-color 200ms ease;
 }
 
 .service .talk-btn:hover {
@@ -251,45 +239,33 @@ img[alt="image-5"] {
   background-color: #749a87;
 }
 
-.team {
-  margin-top: 80px;
+.service .image {
+  width: 42%;
 }
 
-.head {
+.team {
+  margin: 80px 0px;
+}
+
+.header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.head h3 {
-  margin-left: 80px;
-  font-size: 40px;
-  line-height: 1.4;
-  width: 30%;
-}
-
-.head p {
-  margin-right: 120px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.6;
+.header h2 {
   width: 35%;
 }
 
+.header p {
+  width: 45%;
+}
+
 .team-members {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.team-member {
-  width: 25%;
-}
-
-.team-member img {
-  height: 450px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
 }
 
 .team-member h4 {
@@ -307,14 +283,14 @@ img[alt="image-5"] {
 
 .see-more-btn {
   display: block;
-  margin: 60px auto 80px auto;
+  margin: 60px auto 0px auto;
   padding: 12px 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
   background-color: #8bb7a2;
   border: none;
-  transition: background-color 150ms ease;
+  transition: background-color 200ms ease;
 }
 
 .see-more-btn:hover {
@@ -322,75 +298,53 @@ img[alt="image-5"] {
   background-color: #749a87;
 }
 
-.footer {
+footer {
   background-color: #10181d;
-  padding: 0 80px;
 }
 
 .footer-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.3);
 }
 
-.logo-2 {
-  height: 45px;
+.logo-bottom {
+  width: 120px;
   cursor: pointer;
 }
 
-.social-media img {
-  height: 20px;
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links img {
+  width: 20px;
   padding: 10px;
-  background-color: #ffffff20;
+  background-color: rgb(255, 255, 255, 0.1);
   border-radius: 50%;
-  margin-left: 8px;
-}
-
-.social-media img:hover {
-  animation: zoom 200ms ease forwards;
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.15);
-  }
-}
-
-.divider {
-  height: 1px;
-  width: 100%;
-  background-color: #ffffff40;
 }
 
 .footer-bottom {
-  padding: 60px 0;
+  padding: 60px 0px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
-.footer-bottom div {
-  list-style-type: none;
-}
-
-.footer-bottom h5 {
+.footer-bottom li:first-child {
   margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   color: #ffffff;
 }
 
-.footer-bottom li {
+.footer-bottom ul li {
   margin-bottom: 14px;
 }
 
-.footer-bottom li a {
-  text-decoration: none;
-  font-size: 14px;
+.footer-bottom ul li a {
+  font-size: 13px;
   color: #ffffff;
 }

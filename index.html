@@ -4,30 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Landing Page</title>
+    <!-- Font awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS files -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-query.css" />
+    <title>Business Landing Page</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="header">
-        <nav class="navbar">
-          <img class="logo-1" src="./assets/png-images/white-logo.png" alt="brand-logo" />
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <img class="logo-top" src="./assets/png-images/white-logo.png" alt="brand-logo" />
 
-          <ul class="nav-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Agent</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Subscribe</a></li>
-          </ul>
+        <ul class="nav-items">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Agent</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Subscribe</a></li>
+        </ul>
 
-          <button class="talk-btn">Let's Talk</button>
-        </nav>
+        <button class="talk-btn">Let's Talk</button>
 
-        <div class="introduction">
-          <div class="intro-image">
-            <img src="./assets/jpg-images/pexels-fauxels-3183197.jpg" alt="image-1" />
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+
+      <!-- Hero section -->
+      <div class="hero">
+        <div class="container">
+          <div class="image">
+            <img src="./assets/png-images/pexels-fauxels-3183197.png" alt="image-1" />
           </div>
 
           <div class="content">
@@ -38,97 +54,109 @@
               way possible through the digital medium.
             </p>
 
-            <form action="" method="GET">
-              <input type="email" name="user-email" placeholder="Enter your email address" maxlength="50" required />
-
+            <form action="">
+              <input type="email" name="user-email" placeholder="Enter your email address" required />
               <button class="talk-btn" type="submit">Let's Talk</button>
-
               <img src="./assets/png-images/icons8-mail-24.png" alt="mail-icon" />
             </form>
           </div>
         </div>
       </div>
+    </header>
 
-      <div class="achievements">
+    <!-- About Us section -->
+    <div class="about-us">
+      <div class="container">
         <h2>We connect your businesses with your target</h2>
 
         <div class="company-stats">
-          <div class="data">
+          <div class="stat">
             <h3>1,093</h3>
-            <span>Finished Projects</span>
+            <h5>Finished Projects</h5>
           </div>
 
-          <div class="data">
+          <div class="stat">
             <h3>3,355</h3>
-            <span>Enrolled Projects</span>
+            <h5>Enrolled Projects</h5>
           </div>
 
-          <div class="data">
+          <div class="stat">
             <h3>40</h3>
-            <span>Team Workers</span>
+            <h5>Team Workers</h5>
           </div>
 
-          <div class="data">
+          <div class="stat">
             <h3>90%</h3>
-            <span>Satisfaction Rate</span>
+            <h5>Satisfaction Rate</h5>
           </div>
         </div>
 
-        <img src="./assets/jpg-images/pexels-fauxels-3184325.jpg" alt="image-2" />
+        <div class="image"><img src="./assets/png-images/pexels-fauxels-3184325.png" alt="image-2" /></div>
       </div>
+    </div>
 
-      <div class="services">
+    <!-- Services section -->
+    <div class="services">
+      <div class="container">
         <h2>We have made your work easy for you</h2>
 
-        <div class="service top">
-          <div class="content one">
-            <h3>Effective Website Design and Development</h3>
-            <p>
-              By connecting patients all over the world to the best instructors, Healthycare helping individuals reach
-              their goals and pursue their dreams.
-            </p>
-            <button class="talk-btn">Let's Talk</button>
+        <div class="all-services">
+          <!-- Service 1 -->
+          <div class="service">
+            <div class="content">
+              <h2>Effective Website Design and Development</h2>
+              <p>
+                By connecting patients all over the world to the best instructors, Healthycare helping individuals reach
+                their goals and pursue their dreams.
+              </p>
+              <button class="talk-btn">Let's Talk</button>
+            </div>
+
+            <div class="image">
+              <img src="./assets/png-images/pexels-fauxels-3184405.png" alt="image-3" />
+            </div>
           </div>
 
-          <div class="image">
-            <img src="./assets/jpg-images/pexels-fauxels-3184405.jpg" alt="image-3" />
-          </div>
-        </div>
+          <!-- Service 2 -->
+          <div class="service">
+            <div class="image">
+              <img src="./assets/png-images/pexels-fauxels-3184603.png" alt="image-4" />
+            </div>
 
-        <div class="service middle">
-          <div class="image">
-            <img src="./assets/jpg-images/pexels-fauxels-3184603.jpg" alt="image-4" />
-          </div>
-
-          <div class="content two">
-            <h3>We provide proven Digital Marketing strategies to our clients</h3>
-            <p>
-              Consultant working hard and we collaborate with organizations that are keen transform the legal industry.
-              reach their goals and pursue their dreams.
-            </p>
-            <button class="talk-btn">Let's Talk</button>
-          </div>
-        </div>
-
-        <div class="service bottom">
-          <div class="content three">
-            <h3>People will always judge the book by it's cover</h3>
-            <p>
-              By connecting patients all over the world to the best instructors, Healthycare helping individuals reach
-              their goals and pursue their dreams.
-            </p>
-            <button class="talk-btn">Let's Talk</button>
+            <div class="content">
+              <h2>We provide proven Digital Marketing strategies to our clients</h2>
+              <p>
+                Consultant working hard and we collaborate with organizations that are keen transform the legal
+                industry. reach their goals and pursue their dreams.
+              </p>
+              <button class="talk-btn">Let's Talk</button>
+            </div>
           </div>
 
-          <div class="image">
-            <img src="./assets/jpg-images/pexels-linkedin-sales-navigator-2182969.jpg" alt="image-5" />
+          <!-- Service 3 -->
+          <div class="service">
+            <div class="content">
+              <h2>People will always judge the book by it's cover</h2>
+              <p>
+                By connecting patients all over the world to the best instructors, Healthycare helping individuals reach
+                their goals and pursue their dreams.
+              </p>
+              <button class="talk-btn">Let's Talk</button>
+            </div>
+
+            <div class="image">
+              <img src="./assets/png-images/pexels-linkedin-sales-navigator-2182969.png" alt="image-5" />
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="team">
-        <div class="head">
-          <h3>Meet our great creative team</h3>
+    <!-- Team section -->
+    <div class="team">
+      <div class="container">
+        <div class="header">
+          <h2>Meet our great creative team</h2>
           <p>
             Our journey began with a simple idea make a simpla journey make this world more function. We collaborate
             with organizations that are keen transform.
@@ -136,20 +164,23 @@
         </div>
 
         <div class="team-members">
+          <!-- Team member 1 -->
           <div class="team-member">
-            <img src="./assets/jpg-images/pexels-mikhail-nilov-8937870.jpg" alt="image-6" />
+            <img src="./assets/png-images/pexels-mikhail-nilov-8937870.png" alt="image-6" />
             <h4>Amera Amanda</h4>
             <p>Introduction start procrasninate 2 hours get to do work get to do work while eating.</p>
           </div>
 
+          <!-- Team member 2 -->
           <div class="team-member">
-            <img src="./assets/jpg-images/pexels-precious-judah-9154594.jpg" alt="image-7" />
+            <img src="./assets/png-images/pexels-precious-judah-9154594.png" alt="image-7" />
             <h4>Lucas Podolski</h4>
             <p>Introduction start procrasninate 2 hours get to do work get to do work while eating.</p>
           </div>
 
+          <!-- Team member 3 -->
           <div class="team-member">
-            <img src="./assets/jpg-images/pexels-christina-morillo-1181424.jpg" alt="image-8" />
+            <img src="./assets/png-images/pexels-christina-morillo-1181424.png" alt="image-8" />
             <h4>Leny Marissa Nasution</h4>
             <p>Introduction start procrasninate 2 hours get to do work get to do work while eating.</p>
           </div>
@@ -157,68 +188,65 @@
 
         <button class="see-more-btn">See More</button>
       </div>
+    </div>
 
-      <div class="footer">
+    <!-- Footer -->
+    <footer>
+      <div class="container">
         <div class="footer-top">
-          <img class="logo-2" src="./assets/png-images/white-logo.png" alt="brand-logo" />
+          <img class="logo-bottom" src="./assets/png-images/white-logo.png" alt="brand-logo" />
 
-          <div class="social-media">
-            <a href="#"><img src="./assets/svg-images/icons8-instagram.svg" alt="instagram" /></a>
-
-            <a href="#"><img src="./assets/svg-images/icons8-facebook.svg" alt="facebook" /></a>
-
-            <a href="#"><img src="./assets/svg-images/icons8-twitter.svg" alt="twitter" /></a>
-
-            <a href="#"><img src="./assets/svg-images/icons8-github.svg" alt="github" /></a>
-
-            <a href="#"><img src="./assets/svg-images/icons8-linkedin.svg" alt="linkedIn" /></a>
+          <div class="social-links">
+            <a href=""><img src="./assets/svg-images/icons8-instagram.svg" alt="instagram" /></a>
+            <a href=""><img src="./assets/svg-images/icons8-facebook.svg" alt="facebook" /></a>
+            <a href=""><img src="./assets/svg-images/icons8-twitter.svg" alt="twitter" /></a>
+            <a href=""><img src="./assets/svg-images/icons8-github.svg" alt="github" /></a>
+            <a href=""><img src="./assets/svg-images/icons8-linkedin.svg" alt="linkedIn" /></a>
           </div>
         </div>
-
-        <div class="divider"></div>
 
         <div class="footer-bottom">
-          <div>
-            <h5>Our Products</h5>
-            <li><a href="#">The Support Suite</a></li>
-            <li><a href="#">The Sales Suite</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Guide</a></li>
-          </div>
+          <ul>
+            <li>Our Products</li>
+            <li><a href="">The Support Suite</a></li>
+            <li><a href="">The Sales Suite</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Guide</a></li>
+          </ul>
 
-          <div>
-            <h5>Top Features</h5>
-            <li><a href="#">Ticketing System</a></li>
-            <li><a href="#">Knowledge Base</a></li>
-            <li><a href="#">Community Forums</a></li>
-            <li><a href="#">Help Desk Software</a></li>
-          </div>
+          <ul>
+            <li>Top Features</li>
+            <li><a href="">Ticketing System</a></li>
+            <li><a href="">Knowledge Base</a></li>
+            <li><a href="">Community Forums</a></li>
+            <li><a href="">Help Desk Software</a></li>
+          </ul>
 
-          <div>
-            <h5>Resources</h5>
-            <li><a href="#">Product Support</a></li>
-            <li><a href="#">Request Demo</a></li>
-            <li><a href="#">Library</a></li>
-            <li><a href="#">Business Blog</a></li>
-          </div>
+          <ul>
+            <li>Resources</li>
+            <li><a href="">Product Support</a></li>
+            <li><a href="">Request Demo</a></li>
+            <li><a href="">Library</a></li>
+            <li><a href="">Business Blog</a></li>
+          </ul>
 
-          <div>
-            <h5>Company</h5>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Investors</a></li>
-            <li><a href="#">Events</a></li>
-          </div>
+          <ul>
+            <li>Company</li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Investors</a></li>
+            <li><a href="">Events</a></li>
+          </ul>
 
-          <div>
-            <h5>Favourites</h5>
-            <li><a href="#">For Enterprise</a></li>
-            <li><a href="#">For Startups</a></li>
-            <li><a href="#">For Benchmark</a></li>
-            <li><a href="#">For Small Business</a></li>
-          </div>
+          <ul>
+            <li>Favourites</li>
+            <li><a href="">For Enterprise</a></li>
+            <li><a href="">For Startups</a></li>
+            <li><a href="">For Benchmark</a></li>
+            <li><a href="">For Small Business</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
