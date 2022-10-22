@@ -26,10 +26,6 @@
     font-size: 35px;
   }
 
-  p {
-    font-size: 15px;
-  }
-
   .service .content h2 {
     font-size: 30px;
   }
@@ -89,6 +85,10 @@
 
   .stat {
     justify-self: center;
+  }
+
+  .about-us .image {
+    width: 100%;
   }
 
   .service {
@@ -169,12 +169,16 @@
 }
 
 @media (max-width: 560px) {
+  .container {
+    padding: 0px 25px;
+  }
+
   h1 {
     font-size: 32px;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .service .content h2,
@@ -186,14 +190,26 @@
     font-size: 16px;
   }
 
+  .navbar {
+    padding: 30px 25px 0px 25px;
+  }
+
+  .hero {
+    padding: 40px 0px;
+  }
+
   .hero form {
     flex-direction: column;
   }
 
   .hero input,
-  .hero .talk-btn {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .hero .hero .image,
+  .service .image {
+    width: 90%;
+  }
+
+  .company-stats {
+    grid-template-columns: 1fr;
   }
 
   .team-members {
@@ -206,9 +222,5 @@
 
   .footer-bottom {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .container {
-    padding: 0px 25px;
   }
 }
