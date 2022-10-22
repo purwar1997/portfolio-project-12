@@ -73,6 +73,10 @@
 }
 
 @media (max-width: 970px) {
+  .navbar {
+    padding: 40px 40px 0px 40px;
+  }
+
   .about-us h2,
   .services h2 {
     width: 100%;
@@ -144,10 +148,6 @@
     padding: 0px 40px;
   }
 
-  .navbar {
-    padding: 40px 40px 0px 40px;
-  }
-
   .logo-top,
   .logo-bottom {
     width: 90px;
@@ -168,7 +168,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 570px) {
   .container {
     padding: 0px 25px;
   }

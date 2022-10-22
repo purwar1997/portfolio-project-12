@@ -21,6 +21,6 @@ This project is a landing page for a company that provides digital solutions to 
 
 ### Preview of the project :-
 
-![preview]()
+![preview](<./previews/Screenshot%20(130).png>)
 
 ### [Live link](https://portfolio-project-12.vercel.app/) of the project.
