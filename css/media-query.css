@@ -1,0 +1,214 @@
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .hero .talk-btn {
+    left: 64%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .nav-items,
+  .navbar .talk-btn {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  .hero .content {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .service .content h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    padding: 0px 70px;
+  }
+
+  .hero .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero .image {
+    width: 60%;
+  }
+
+  .hero .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero input {
+    flex: 1;
+    padding: 14px 20px;
+  }
+
+  .hero .talk-btn {
+    position: static;
+    padding: 14px 20px;
+  }
+
+  img[alt="mail-icon"] {
+    display: none;
+  }
+}
+
+@media (max-width: 970px) {
+  .about-us h2,
+  .services h2 {
+    width: 100%;
+  }
+
+  .company-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .stat {
+    justify-self: center;
+  }
+
+  .service {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .service:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .service .image {
+    width: 60%;
+  }
+
+  .service .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service .content h2 {
+    text-align: center;
+  }
+
+  .team .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header h2,
+  .header p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-member:nth-child(3) {
+    display: none;
+  }
+
+  .footer-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 0px 40px;
+  }
+
+  .navbar {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .logo-top,
+  .logo-bottom {
+    width: 90px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .hero .image,
+  .service .image {
+    width: 80%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .service .content h2,
+  .company-stats h3 {
+    font-size: 25px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .hero form {
+    flex-direction: column;
+  }
+
+  .hero input,
+  .hero .talk-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member:nth-child(3) {
+    display: block;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container {
+    padding: 0px 25px;
+  }
+}

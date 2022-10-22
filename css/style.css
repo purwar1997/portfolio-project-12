@@ -36,6 +36,11 @@ img {
   width: 100%;
 }
 
+button {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .container {
   padding: 0px 110px;
 }
@@ -73,8 +78,6 @@ header {
   margin-left: 60px;
   padding: 10px 30px;
   background-color: transparent;
-  font-size: 18px;
-  font-weight: 500;
   color: #ffffff;
   border: 1px solid #ffffff;
   transition: background-color 200ms ease;
@@ -120,11 +123,12 @@ header {
 
 .hero .content form {
   margin-top: 30px;
+  position: relative;
 }
 
 .hero input {
   padding: 15px 40px;
-  width: 360px;
+  width: 72%;
   font-size: 15px;
   font-weight: 500;
   background-color: #ffffff;
@@ -134,14 +138,13 @@ header {
 .hero .talk-btn {
   padding: 10px 20px;
   font-size: 15px;
-  font-weight: 500;
   color: #ffffff;
   background-color: #8bb7a2;
   border: none;
   transition: background-color 200ms ease;
-  position: relative;
-  left: 324px;
-  bottom: 44px;
+  position: absolute;
+  left: 65%;
+  top: 5px;
 }
 
 .hero .talk-btn:hover {
@@ -151,9 +154,9 @@ header {
 
 img[alt="mail-icon"] {
   width: 18px;
-  position: relative;
-  right: 105px;
-  bottom: 40px;
+  position: absolute;
+  top: 15px;
+  left: 11px;
 }
 
 .about-us {
@@ -226,8 +229,6 @@ img[alt="mail-icon"] {
 .service .talk-btn {
   margin-top: 30px;
   padding: 12px 30px;
-  font-size: 18px;
-  font-weight: 500;
   color: #ffffff;
   background-color: #8bb7a2;
   border: none;
@@ -285,8 +286,6 @@ img[alt="mail-icon"] {
   display: block;
   margin: 60px auto 0px auto;
   padding: 12px 30px;
-  font-size: 18px;
-  font-weight: 500;
   color: #ffffff;
   background-color: #8bb7a2;
   border: none;
@@ -306,12 +305,12 @@ footer {
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   border-bottom: 1px solid rgb(255, 255, 255, 0.3);
 }
 
 .logo-bottom {
-  width: 120px;
+  width: 110px;
   cursor: pointer;
 }
 
@@ -341,7 +340,7 @@ footer {
 }
 
 .footer-bottom ul li {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .footer-bottom ul li a {
