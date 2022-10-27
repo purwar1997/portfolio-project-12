@@ -101,8 +101,9 @@ header {
 
 .hero .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
 .hero .image {
@@ -334,7 +335,7 @@ footer {
 }
 
 .footer-bottom li:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
@@ -345,6 +346,6 @@ footer {
 }
 
 .footer-bottom ul li a {
-  font-size: 13px;
+  font-size: 14px;
   color: #ffffff;
 }
