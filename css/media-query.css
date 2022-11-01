@@ -59,12 +59,13 @@
 
   .hero input {
     flex: 1;
-    padding: 14px 20px;
+    padding: 15px 20px;
   }
 
   .hero .talk-btn {
     position: static;
-    padding: 14px 20px;
+    font-size: 16px;
+    padding: 15px 20px;
   }
 
   img[alt="mail-icon"] {
@@ -200,6 +201,7 @@
 
   .hero form {
     flex-direction: column;
+    gap: 20px;
   }
 
   .hero input,
